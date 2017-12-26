@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.frescodemo.MainActivity">
+
+ <!--<com.facebook.drawee.view.SimpleDraweeView-->
+     <!--android:layout_centerInParent="true"-->
+     <!--android:id="@+id/simple_drawee_view"-->
+     <!--android:layout_width="150dp"-->
+     <!--android:layout_height="150dp"-->
+     <!--/>-->
+ <com.facebook.drawee.view.SimpleDraweeView
+     android:layout_centerInParent="true"
+     android:id="@+id/simple_drawee_view"
+     android:layout_width="150dp"
+     android:layout_height="wrap_content"
+     fresco:viewAspectRatio="1"
+     fresco:failureImage="@drawable/icon_failure"
+     fresco:progressBarImage="@drawable/icon_progress_bar"
+     fresco:progressBarAutoRotateInterval="1000"
+     fresco:retryImage="@drawable/icon_retry"
+     fresco:retryImageScaleType="centerInside"
+    fresco:roundedCornerRadius="20dp"
+     fresco:roundTopLeft="false"
+     fresco:roundAsCircle="true"
+     fresco:roundingBorderWidth="2dp"
+     fresco:roundingBorderColor="#eeeeee"
+     />
+
+
+ <TextView
+     android:onClick="play"
+     android:text="播放gif"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+</RelativeLayout>
